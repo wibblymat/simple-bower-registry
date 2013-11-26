@@ -1,6 +1,6 @@
 {
   "name": "simple-bower-registry",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A very simple implementation of a bower 1.0 registry server that can be used to host a private registry.",
   "main": "server.js",
   "bin": {
