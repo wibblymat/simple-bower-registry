@@ -3,7 +3,7 @@ simple-bower-registry
 
 A very simple registry server compatible with bower 1.x. Designed for those who want to host their own private registry.
 
-##Usage
+###Usage
 
 Install with `npm install -g simple-bower-registry`. Then you can run the server as `simple-bower-registry`.
 
@@ -16,3 +16,9 @@ To use your server with bower, update (or create) a .bowerrc file either in your
   "registry": "http://localhost:3333"
 }
 ```
+
+###Differences from the live bower registry
+
+- If you make a mistake when registering a package, you can just submit it again and it will overwrite the existing one.
+- You can use any valid endpoint, not just `git://` URLs.
+- There is no database to manage. The data is kept in memory and persisted to a plain JSON file.
